@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.msky.wavebezierprogress.MainActivity">
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button"
+        android:layout_toEndOf="@+id/button"
+        android:layout_toRightOf="@+id/button"
+        android:onClick="jian"
+        android:text="-10" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button2"
+        android:layout_toEndOf="@+id/button2"
+        android:layout_toRightOf="@+id/button2"
+        android:onClick="man"
+        android:text="100" />
+
+    <com.msky.wavebezierprogress.WavaBezierProgress
+
+        android:id="@+id/wavaBezierProgress"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="#e6f1ef"
+        app:progressTextSize="50dp"
+        app:progressColor="#e3e32b"
+        app:progressTextLocation="100dp"
+        app:progressTextColor="#de0d4c"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="jia"
+        android:text="+10"
+        android:layout_below="@+id/wavaBezierProgress"
+        android:layout_alignLeft="@+id/wavaBezierProgress"
+        android:layout_alignStart="@+id/wavaBezierProgress" />
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="WavaBezierProgress">
+
+        <attr name="progressColor" format="color"></attr>
+        <attr name="progressTextColor" format="color"></attr>
+        <attr name="progressTextSize" format="dimension"></attr>
+        <attr name="progressTextLocation" format="dimension"></attr>
+
+
+    </declare-styleable>
+
+
+
+</resources>
